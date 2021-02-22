@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Amiri', serif;
+}
+body{
+    /* background-image: url(scenic-view-of-forest-during-night-time-1252869.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    background-color: #191919;
+}
+.big_Container{
+    display: grid;
+    grid-template-rows:auto auto ;
+    grid-template-columns:auto ;
+    grid-template-areas:
+        "N"
+        "B"
+        ;
+}
+.nav{
+    grid-area: N;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10.60vh;
+    justify-content: space-around;
+    background-color: #313131;
+    
+}
+.nav .left-items p{
+    color: #ff8c72;
+    display: inline-block;
+    font-size: 2.1961932650073206vw;
+    margin-top: 10px;
+
+    
+}
+.nav .left-items p span{
+    color:#FDFFFF;
+    background-color: #ff8c72;
+    display: inline;
+    font-weight: bolder;
+    font-size: 1.8301610541727673vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+        
+    
+}
+a{
+    display: inline-block;
+}
+.log form input[type=submit]{
+    display: inline-flex;
+     color: #fd5e53;
+    margin-top: 12px;
+    position: static;
+    padding: 2px 30px;
+    width: 200px;
+    background-color:transparent;
+    font-weight: bolder;
+    font-size: 1.8301610541727673vw;
+    border:1px solid #fd5e53;
+    border-radius: 50px;
+}
+.log form input[type=submit]:hover{
+   display: inline-flex;
+     color: whitesmoke;
+    margin-top: 12px;
+    position: static;
+    padding: 2px 30px;
+    width: 200px;
+    background-color:#FF8C72;
+    font-weight: bolder;
+    font-size: 1.8301610541727673vw;
+    border:1px solid #fd5e53;
+    border-radius: 50px;
+}
+.nav .right-items a:link,a:visited{
+    color: #ACB9C2;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.4641288433382138vw;
+}
+.nav .right-items a:hover{
+    color:#fd5e53;
+    border-bottom: 1px solid #fd5e53;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:90px 
+    
+}
+.Artm{
+    width: 40%;
+    text-align: left;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px 20px ; 
+    text-align: center;
+}
+.Artm a:link,a:visited,a:active{
+    text-decoration: none;
+    color:whitesmoke
+}
+.Artm a:hover{
+   
+   
+    color:#FF8C72;
+    
+    
+    
+   
+}
+.Artm h5 span{
+    color: #FD5E53;
+    font-size: 16px
+}
+.Artm img{
+    width: 14.641288433382138vw;
+}
+
+
+/*this for the Add article page*/
+
+
+.Artm label{
+    display: block;
+    color:#FF8C72;
+    line-height: 2em
+}
+.Artm input[type=text],textarea,input[type=file],input[type=password]{
+    background-color: transparent;
+    border: 1px solid #E6CFE3;
+    border-radius: 15px;
+    text-align: center;
+    color:white;
+}
+.Artm textarea{
+    width: 30em;
+    height: 10em;
+}
+
+.Artm input[type=text]:focus,input[type=password]textarea:focus{
+    border-color:#7986CB;
+    color:white;
+    
+}
+.Artm input[type=submit]{
+    display:block;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+.Artm input[type=submit]{
+    background-color: transparent;
+    border: none;
+    color:#FD5E53;
+    font-size: 1.4em;
+    border:1px solid #FD5E53;
+    padding: 0px 2em;
+    border-radius: 20em;
+}
+.Artm input[type=submit]:hover{
+    background-color: #FF8C72;
+    color:white;
+    border: none;
+    font-size: 1.4em;
+    border:1px solid #FD5E53;
+    padding: 0px 2em;
+    border-radius: 20em;
+}
+
+.helptext{
+    color:grey;
+}
+.errorlist{
+    list-style-type: none;
+    color:grey;
+    border:1px solid red;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+

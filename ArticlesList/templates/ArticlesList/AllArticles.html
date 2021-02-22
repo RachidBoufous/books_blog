@@ -1,0 +1,35 @@
+{% extends 'Master.html' %}
+
+
+{% block Content %}
+    
+
+    
+    <div class="big_Container">
+    
+    <div class="Container" id="HOME">
+        
+        {% for Art in ARTL %}  
+        <div class="Artm">
+            <h1>
+                <a href="{% url 'test:ArtiD' Slg=Art.slug %}">
+                    {{Art.Title}}
+                </a>
+            </h1>
+            
+            <img src="{{Art.Logo.url}}" alt="{{Art.Logo}}">
+            <p>
+                {{Art.fifthteenC}}
+            </p>
+            <h4>
+                {{Art.date}}
+            </h4>
+            <h5>
+                created by: <span>{{Art.author}}</span> 
+            </h5>
+        </div>   
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock Content %}

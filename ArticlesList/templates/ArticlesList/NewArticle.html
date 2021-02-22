@@ -1,0 +1,25 @@
+{% extends 'Master.html' %}
+
+
+{% block Content %}
+
+
+
+<div class="big_Container">
+    <div class="Container" id="HOME">
+        <div class="Artm">
+            <h1>Add a new Article:</h1>
+            <div class="AddNew">
+                <form action="{% url 'test:NewArticle' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{F1}}
+                    <input type="submit" value="Add new Article">
+    
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>
+{% endblock Content %}
+    

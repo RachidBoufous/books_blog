@@ -1,0 +1,18 @@
+{% extends 'Master.html' %}
+
+
+{% block Content %}
+<div class="big_Container">
+    <div class="Container" id="HOME">
+        <div class="Artm">
+        <h1>SignUp</h1>
+        <form action="/Accounts/Signup/" method="post">
+            {% csrf_token %}
+            {{Form}}
+            <input type="submit" value="SignIn" name="Submitbtn" id="submit">
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock Content %}
+    

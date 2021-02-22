@@ -1,0 +1,20 @@
+{% extends 'Master.html' %}
+
+{% block Content %}
+<div class="big_Container">
+    <div class="Container" id="HOME">
+        <div class="Artm">
+        <h1>Login</h1>
+        <form action="{% url 'accounts:login' %}" method="post">
+            {% csrf_token %}
+            {{Form}}
+            {% if request.GET.next %}
+                <input type="hidden" name="next" value="{{ request.GET.next }}">
+            {% endif %}
+            <input type="submit" value="login" name="Submitbtn" id="submit">
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock Content %}
+    

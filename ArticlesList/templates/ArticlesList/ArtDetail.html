@@ -1,0 +1,24 @@
+{% extends 'Master.html' %}
+
+
+{% block Content %}
+<div class="big_Container">
+    <div class="Container" id="HOME">
+        <div class="Artm">
+            <h1>
+                {{FoundedObj.Title}}
+            </h1>
+            
+            <img style="width:  16.666666666666668vw;height: auto;;" src="{{FoundedObj.Logo.url}}" alt="">
+            <p>
+                {{FoundedObj.body}}
+            </p>
+            <h5>
+                {{FoundedObj.date}}
+            </h5>
+            
+        </div>   
+    </div>
+</div>
+{% endblock Content %}
+    

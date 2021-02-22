@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 stormes</title>
+    <link rel="stylesheet" href="{% static 'Base.css' %}">
+    <link rel="icon" href="{% static 'ico.png' %}">
+
+</head>
+<body>
+    <div class="nav">
+        <div class="left-items">
+            <p>21&nbsp;<span>Stormes</span></p>
+        </div>
+        <div class="right-items">
+            <a href="{% url 'test:Home' %}">Home</a>
+            <!-- <a href="{% url 'test:About' %}">About</a>
+            <a href="{% url 'test:Contact' %}">Contact</a> -->
+            
+            
+            {% if user.is_authenticated %}
+            <a href="{% url 'test:NewArticle' %}">Add article  </a>
+            {% else %}
+            <a href="{% url 'accounts:SignUp' %}">SignUp</a>
+            <a href="{% url 'accounts:login' %}">LogIn  </a>
+            {% endif %}
+                
+           
+          
+               
+        </div>
+        {% if user.is_authenticated %}
+        <div class="log">
+            <form action="/Accounts/logout/" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Logout">
+                </form>
+        </div>  
+        {% endif %}
+       
+    </div>
+    <div class="wrapper">
+        {% block Content %}
+        
+        {% endblock Content %}
+    </div>
+</body>
+</html>
